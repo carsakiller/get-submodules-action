@@ -3,7 +3,7 @@ description: |
   Get your submodules, including those that have GitLab remotes
 runs:
   using: node16
-  main: main.js
+  main: index.js
 
 inputs:
   depth:

@@ -2,10 +2,10 @@
   "name": "get-submodules-action",
   "version": "0.1.0",
   "description": "Gets git submodules for your repo",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "package": "ncc build src/main.ts"
+    "package": "ncc build src/index.ts"
   },
   "repository": {
     "type": "git",
