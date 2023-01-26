@@ -1,0 +1,29 @@
+{
+  "name": "get-submodules-action",
+  "version": "0.1.0",
+  "description": "Gets git submodules for your repo",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "ncc build src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carsakiller/get-submodules-action.git"
+  },
+  "author": "carsakiller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carsakiller/get-submodules-action/issues"
+  },
+  "homepage": "https://github.com/carsakiller/get-submodules-action#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@vercel/ncc": "^0.36.1",
+    "typescript": "^5.0.0-dev.20230125"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "simple-git": "^3.16.0"
+  }
+}

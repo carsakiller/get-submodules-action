@@ -1,0 +1,10 @@
+name: Get Submodules
+description: |
+  Get your submodules, including those that have GitLab remotes
+runs:
+  using: node16
+  main: main.js
+
+inputs:
+  depth:
+    description: The depth at which to clone each submodule at. Should be an integer.
