@@ -39,11 +39,13 @@ async function run() {
 
     // Convert SSH remotes to HTTP
     if (protocol === "git@") {
+      console.log(`Converting SSH remote for ${path} to HTTPS`);
       const newRemoteURL = `https://${host}/${remotePath}`;
       await git.subModule(["set-url", path, newRemoteURL]);
-      console.log(`Converting SSH remote for ${path} to HTTPS`);
     }
   }
+
+  await git.subModule(["sync"]);
 
   console.log("Getting submodules");
 
